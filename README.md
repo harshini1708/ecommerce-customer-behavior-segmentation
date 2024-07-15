@@ -35,28 +35,20 @@ The dataset `purchase_history.csv` contains the following features:
 
 ## Project Architecture
 
+
 ```mermaid
-flowchart LR
-    A[Raw Purchase Data (CSV)] --> B[Data Cleaning & Preprocessing]
-    B --> C[Exploratory Data Analysis (EDA)]
-    C --> D[Customer Feature Engineering<br/>(Age, Salary, Product, etc.)]
-    D --> E[K-Means Clustering]
-    D --> F[Classification Model<br/>(e.g., Random Forest)]
-    E --> G[Customer Segments Identified]
-    F --> H[Predict Purchase Behavior]
-    G --> I[Visual Dashboard (Plotly/Tableau)]
+flowchart TD
+    A("Raw Data - CSV") --> B("Data Preprocessing")
+    B --> C("Exploratory Data Analysis")
+    C --> D("Feature Engineering")
+    D --> E("K-Means Clustering")
+    D --> F("Classification Model")
+    E --> G("Customer Segments")
+    F --> H("Purchase Predictions")
+    G --> I("Dashboard - Plotly / Tableau")
     H --> I
-    style A fill:#fdf6e3,stroke:#333,stroke-width:1px
-    style B fill:#fdf6e3,stroke:#333,stroke-width:1px
-    style C fill:#fdf6e3,stroke:#333,stroke-width:1px
-    style D fill:#fef3c7,stroke:#333,stroke-width:1px
-    style E fill:#bae6fd,stroke:#333,stroke-width:1px
-    style F fill:#d8b4fe,stroke:#333,stroke-width:1px
-    style G fill:#bbf7d0,stroke:#333,stroke-width:1px
-    style H fill:#fcd34d,stroke:#333,stroke-width:1px
-    style I fill:#86efac,stroke:#333,stroke-width:1px
-    linkStyle default stroke-width:2px,fill:none
 ```
+
 
 ---
 
